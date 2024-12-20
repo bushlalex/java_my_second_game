@@ -11,8 +11,13 @@ let x = randomNmbr();
 /*Сделать функцию, которая принимает число от пользователя, сравнивает это число с числом возврата 
 функции randomNmbr() и выводит дальнейшие решения*/
 
+function vvodText () {
+    return document.getElementById('Vvod');
+    }
+    vvodText ();
+
 function userNumber (numberUser) {
-    if (numberUser === x) {
+    if (numberUser == x) {
         return console.log("Вы угадали это число!")
     }
     else if (numberUser > x) {
@@ -23,5 +28,9 @@ function userNumber (numberUser) {
 
     else return console.log("Введите число")
 }
-userNumber(53);
+userNumber(12);
+
+
+
+
 
