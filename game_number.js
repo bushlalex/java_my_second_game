@@ -1,4 +1,4 @@
-//Сделать функцию, вывод которой будет рандомным числом от 1 до 100 (Исключить 0).
+//Сделать функцию, вывод которой будет рандомным числом от 1 до 100 (Исключить 0)
 
 function randomNmbr () {
     let x = Math.floor(Math.random(1)*100);
@@ -6,4 +6,22 @@ function randomNmbr () {
     else return x
 };
 randomNmbr ();
+let x = randomNmbr();
+
+/*Сделать функцию, которая принимает число от пользователя, сравнивает это число с числом возврата 
+функции randomNmbr() и выводит дальнейшие решения*/
+
+function userNumber (numberUser) {
+    if (numberUser === x) {
+        return console.log("Вы угадали это число!")
+    }
+    else if (numberUser > x) {
+        return console.log("Ваше число больше загаданного числа!")
+    }
+    else if (numberUser < x) {
+        return console.log("Ваше число меньше загаданного числа!")}
+
+    else return console.log("Введите число")
+}
+userNumber(53);
 
