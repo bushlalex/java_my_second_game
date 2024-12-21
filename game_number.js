@@ -8,13 +8,12 @@ function randomNmbr () {
 randomNmbr ();
 let x = randomNmbr();
 
+//Сделать функцию, которая берет число от пользователя//
+
+let z = onclick.button;
+
 /*Сделать функцию, которая принимает число от пользователя, сравнивает это число с числом возврата 
 функции randomNmbr() и выводит дальнейшие решения*/
-
-function vvodText () {
-    return document.getElementById('Vvod');
-    }
-    vvodText ();
 
 function userNumber (numberUser) {
     if (numberUser == x) {
