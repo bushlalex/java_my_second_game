@@ -20,16 +20,18 @@
                 <p>Мы скажем вам, если ваша догадка была слишком высокой или слишком низкой</p>
             </div>
         </div>
-        <div class="buttons">
-            <div>Введите предположение:</div>
-            <div>
-                <input type="number" id="Vvod"></input>                
-            </div>
-            <div>
-                <button onclick="">                    
-                        Отправить предположение                    
-                </button>
-            </div>
+        <div class="form">
+            <label for="predpolozenie">Введите предположение:<label>           
+            <input type="number" min="1" max="100" id="predpolozenie">              
+            <button id="ugadat" onclick="igraVNeskolkoPopitok (raspechatatRezultatRaunda (), schetchikPopitok); return false">Угадать!</button>
+            <button id="zanovoIgrat" onclick="obnovitStranicu ()">Начать заново!</button>            
+        </div>
+        <div class="testt">
+            <p id="gameover"></p>
+            <div id="rezultat">
+            <p id="popitki"></p>           
+            <p></p>
+        </div>                
         </div>    
     </div>
     <script src=game_number.js></script>

@@ -36,6 +36,11 @@ p {
     font-weight: bold;    
 }
 
+.testt {
+    display: flex;
+    gap: 20px
+}
+
 
 
 
